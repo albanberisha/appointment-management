@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Aug 03, 2021 at 12:40 PM
+-- Generation Time: Aug 03, 2021 at 12:43 PM
 -- Server version: 10.4.19-MariaDB
 -- PHP Version: 7.3.28
 
@@ -190,7 +190,8 @@ INSERT INTO `userlog` (`id`, `userId`, `username`, `userIp`, `loginTime`) VALUES
 (185, 1, 'dimi', 0x3a3a31, '2021-08-03 08:49:41'),
 (186, 1, 'dimi', 0x3a3a31, '2021-08-03 08:50:21'),
 (187, 1, 'dimi', 0x3a3a31, '2021-08-03 10:35:48'),
-(188, 1, 'dimi', 0x3a3a31, '2021-08-03 10:40:27');
+(188, 1, 'dimi', 0x3a3a31, '2021-08-03 10:40:27'),
+(189, 2, 'qendrim', 0x3a3a31, '2021-08-03 10:42:39');
 
 -- --------------------------------------------------------
 
@@ -212,19 +213,7 @@ CREATE TABLE `users` (
 
 INSERT INTO `users` (`id`, `username`, `password`, `computer_id`, `RoleId`) VALUES
 (1, 'dimi', '$2y$10$Q0iGqPJHF78pWVc2KYBWXulo9rel3P2z0QpG6I2XfT3kxA59UBowi', 'DESKTOP-HK6RU47', 1),
-(2, 'qendrim', '$2y$10$Q0iGqPJHF78pWVc2KYBWXulo9rel3P2z0QpG6I2XfT3kxA59UBowi', '', 1),
-(5, 'grind', '$2y$10$Q0iGqPJHF78pWVc2KYBWXulo9rel3P2z0QpG6I2XfT3kxA59UBowi', 'DESKTOP-5VI2FB4', 2),
-(6, 'amsterdam', '$2y$10$Q0iGqPJHF78pWVc2KYBWXulo9rel3P2z0QpG6I2XfT3kxA59UBowi', 'TWIN-PC', 2),
-(7, 'freskia', '$2y$10$SEhLYXb511OP3VAhoz0/nuCV3dunczyvSXGwVx5jk3pH1gZ6/4cZe', 'DESKTOP-QFBDA34', 2),
-(9, 'demo', '$2y$10$lChK5H1CNXJSwGYhHh7y5ey6GfT9dLYO4Ggy6dofzdngsceWn8Pee', 'PC50-PC', 2),
-(10, 'demo1', '$2y$10$Nwply1bSV0EulbOYhBJkvOTwXgo.2raeMwwUaFswUXgf3uG9rXLaq', 'hp-PC', 2),
-(14, 'kontabilist', '$2y$10$Hii2x.Rs/J.cCeQcslZoqu/4NG9XPlaR1WB9JjfzvzRWFDHyh/vAy', 'kontabilist', 3),
-(15, 'greenpr', '$2y$10$hFD0aaZY8iwomXQAtSVYqexZn5g8ZQFpGRAs5JPefr6wwNzuU5I4y', 'GREENPR', 2),
-(16, 'kristal', '$2y$10$Q0iGqPJHF78pWVc2KYBWXulo9rel3P2z0QpG6I2XfT3kxA59UBowi', 'Kristal-PC', 2),
-(17, 'greendrenas', '$2y$10$Q0iGqPJHF78pWVc2KYBWXulo9rel3P2z0QpG6I2XfT3kxA59UBowi', 'GREENDRENAS', 2),
-(18, 'bungat', '$2y$10$d7jkvSDBkH95ZmrtJZhhSelEfoVC1b6WOJDb4o4hCU4Iz0CRYlljy', 'Bungat-PC', 2),
-(19, 'blerimi', '$2y$10$Q0iGqPJHF78pWVc2KYBWXulo9rel3P2z0QpG6I2XfT3kxA59UBowi', '', 3),
-(20, 'kotabilisttest', '$2y$10$nQ8o2R6zPIfsMMUhiTNTn.6seN2bu2yKyDRsAcm.Y6SnvxBow9tRK', '', 3);
+(2, 'qendrim', '$2y$10$Q0iGqPJHF78pWVc2KYBWXulo9rel3P2z0QpG6I2XfT3kxA59UBowi', '', 1);
 
 --
 -- Indexes for dumped tables
@@ -281,7 +270,7 @@ ALTER TABLE `client`
 -- AUTO_INCREMENT for table `userlog`
 --
 ALTER TABLE `userlog`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=189;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=190;
 
 --
 -- AUTO_INCREMENT for table `users`
